@@ -242,7 +242,7 @@ img_22.addEventListener("click", function () {
 });
 
 function check(){
-    if(moves!=9){
+    if(true){
     if(x_00==1&&x_01==1&&x_02==1){
         answer.innerHTML="Player X Won";
         time=setInterval(ask,2000);
@@ -308,10 +308,11 @@ answer.innerHTML="Player X Won";
         answer.innerHTML = "Player O Won";
         time = setInterval(ask, 2000);
     }
- 
-}else{
-        answer.innerHTML = "Whoops, it's a Tie";
+    else if(moves==9){
+        answer.innerHTML = "Whoops! It's a Tie";
         time = setInterval(ask, 2000);
+    }
+ 
 }
 }
 
