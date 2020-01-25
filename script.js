@@ -36,7 +36,9 @@ var o_20;
 var o_21;
 var o_22;
 
+remove();
 
+function remove(){
 img_00.addEventListener("click",function(){
   
     if(toggle==1)
@@ -47,6 +49,8 @@ img_00.addEventListener("click",function(){
     img_00.src = "x.png";
     img_00.srcset = "x.png";
 check();
+    img_00.removeEventListener("click", arguments.callee, false);
+      
     
 }
     else if(toggle!=1){
@@ -56,6 +60,7 @@ check();
         img_00.src = "o.png";
         img_00.srcset = "o.png";
         check();
+        img_00.removeEventListener("click", arguments.callee, false);
 
     }else{
         alert("Oops, you can't do that!");
@@ -72,14 +77,16 @@ img_01.addEventListener("click", function () {
     img_01.src = "x.png";
         img_01.srcset = "x.png";
         check();
+        img_01.removeEventListener("click", arguments.callee, false);
     }
     else if (toggle!=1) {
         toggle--;
         moves++;
-        o_01=2;
+        o_01=00
         img_01.src = "o.png";
         img_01.srcset = "o.png";
         check();
+        img_01.removeEventListener("click", arguments.callee, false);
     } else {
         alert("Oops, you can't do that!");
 
@@ -94,6 +101,7 @@ img_02.addEventListener("click", function () {
         img_02.src = "x.png";
         img_02.srcset = "x.png";
         check();
+        img_02.removeEventListener("click", arguments.callee, false);
     }
     else if (toggle!=1) {
         toggle--;
@@ -102,6 +110,7 @@ img_02.addEventListener("click", function () {
         img_02.src = "o.png";
         img_02.srcset = "o.png";
         check();
+        img_02.removeEventListener("click", arguments.callee, false);
     } else {
         alert("Oops, you can't do that!");
 
@@ -117,6 +126,7 @@ img_10.addEventListener("click", function () {
         img_10.src = "x.png";
         img_10.srcset = "x.png";
         check();
+        img_10.removeEventListener("click", arguments.callee, false);
     }
     else if (toggle!=1) {
         toggle--;
@@ -125,6 +135,7 @@ img_10.addEventListener("click", function () {
         img_10.src = "o.png";
         img_10.srcset = "o.png";
         check();
+        img_10.removeEventListener("click", arguments.callee, false);
     } else {
         alert("Oops, you can't do that!");
 
@@ -139,6 +150,7 @@ img_11.addEventListener("click", function () {
         img_11.src = "x.png";
         img_11.srcset = "x.png";
         check();
+        img_11.removeEventListener("click", arguments.callee, false);
     }
     else if (toggle!=1) {
         toggle--;
@@ -147,6 +159,7 @@ img_11.addEventListener("click", function () {
         img_11.src = "o.png";
         img_11.srcset = "o.png";
         check();
+        img_11.removeEventListener("click", arguments.callee, false);
     } else {
         alert("Oops, you can't do that!");
 
@@ -161,6 +174,7 @@ img_12.addEventListener("click", function () {
         img_12.src = "x.png";
         img_12.srcset = "x.png";
         check();
+        img_12.removeEventListener("click", arguments.callee, false);
     }
     else if (toggle!=1) {
         toggle--;
@@ -169,6 +183,7 @@ img_12.addEventListener("click", function () {
         img_12.src = "o.png";
         img_12.srcset = "o.png";
         check();
+        img_12.removeEventListener("click", arguments.callee, false);
     } else {
         alert("Oops, you can't do that!");
 
@@ -183,6 +198,7 @@ img_20.addEventListener("click", function () {
         img_20.src = "x.png";
         img_20.srcset = "x.png";
         check();
+        img_20.removeEventListener("click", arguments.callee, false);
     }
     else if (toggle!=1) {
         toggle--;
@@ -191,6 +207,7 @@ img_20.addEventListener("click", function () {
         img_20.src = "o.png";
         img_20.srcset = "o.png";
         check();
+        img_20.removeEventListener("click", arguments.callee, false);
     } else {
         alert("Oops, you can't do that!");
 
@@ -205,6 +222,7 @@ img_21.addEventListener("click", function () {
         img_21.src = "x.png";
         img_21.srcset = "x.png";
         check();
+        img_21.removeEventListener("click", arguments.callee, false);
     }
     else if (toggle!=1) {
         toggle--;
@@ -213,6 +231,7 @@ img_21.addEventListener("click", function () {
         img_21.src = "o.png";
         img_21.srcset = "o.png";
         check();
+        img_21.removeEventListener("click", arguments.callee, false);
     } else {
         alert("Oops, you can't do that!");
 
@@ -227,6 +246,7 @@ img_22.addEventListener("click", function () {
         img_22.src = "x.png";
         img_22.srcset = "x.png";
         check();
+        img_22.removeEventListener("click", arguments.callee, false);
     }
     else if (toggle!=1) {
         toggle--;
@@ -235,11 +255,13 @@ img_22.addEventListener("click", function () {
         img_22.src = "o.png";
         img_22.srcset = "o.png";
         check();
+        img_22.removeEventListener("click", arguments.callee, false);
     } else {
         alert("Oops, you can't do that!");
 
     }
 });
+}
 
 function check(){
     if(true){
