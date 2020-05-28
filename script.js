@@ -341,3 +341,5 @@ answer.innerHTML="Player X Won";
 function ask(){
     location.reload(true);
 }
+
+
