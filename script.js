@@ -1,5 +1,5 @@
 // Author: Jaga
-// Type: Single Player & AI CPU
+// Type: Two Player
 // Date: 05/01/2020
 
 var moves=0;
